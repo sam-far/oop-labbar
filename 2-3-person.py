@@ -2,17 +2,29 @@ import datetime
 
 class Person():
     def __init__(self, birthdate):
+        """
+        Alla har ett födelsedatum
+        """
         self.birthdate = birthdate
-        
+    
     def add_name(self, name):
+        """
+        Lägg till ett namn på Person
+        """
         self.name = name
 
     def change_address(self, address, zipcode, city):
+        """
+        Lägga till och ändra adress
+        """
         self.address = address
         self.zipcode = zipcode
         self.city = city
 
     def current_age(self):
+        """
+        Beräkna ålder
+        """
         return datetime.date.today().year - self.birthdate
         
 
@@ -41,7 +53,7 @@ if __name__ == "__main__":
         sam.zipcode,
         sam.city
     )
-
+    
     print(
         f"{sam.birthdate} - {sam_age} år gammal\n"
         f"{sam.name}\n"
