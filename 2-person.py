@@ -28,19 +28,20 @@ if __name__ == "__main__":
     sam.name = "Sam Ashkan Far"
     sexig_brud.name = "Kate Upton"
 
+    # Adress
     sam.change_address(
         "Coola Gatan 32",
         "765 43",
         "Las Vegas"
     )
-
+    
+    # Byte av address
     sexig_brud.change_address(
         sam.address,
         sam.zipcode,
         sam.city
     )
 
-    # Byte av address
     print(
         f"{sam.birthdate} - {sam_age} år gammal\n"
         f"{sam.name}\n"
